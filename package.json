@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "beautiful": "lint-staged",
+    "prepare": "husky install",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,11 +23,6 @@
     "url": "https://github.com/boyka9x/nodejs_blog/issues"
   },
   "homepage": "https://github.com/boyka9x/nodejs_blog#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma --tab-width 4 all --write"
   },
